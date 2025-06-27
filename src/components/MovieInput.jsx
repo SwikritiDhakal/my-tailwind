@@ -23,4 +23,5 @@ function handleAddButton(){
      <button onClick={handleAddButton}>Add movie</button>
      </>
     );
+    //fetching data using api
 };
