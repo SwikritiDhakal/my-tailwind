@@ -1,8 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
 import Nav from './components/Nav';
-import { MovieList } from './components/MovieList';
-import { MovieInput } from './components/MovieInput';
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import Homepage from './pages/Homepage';
 import Login from './pages/Login';
@@ -13,18 +10,16 @@ import Profile from './pages/Profile';
 function App() {
   return (
     <>
-    <BrowserRouter>
+     <Nav/>
+   
     <Routes>
     <Route path="/" element={<Homepage/>}/>
     <Route path="/login" element={<Login/>}/>
     <Route path="/signup" element={<Signup/>}/>
+    <Route path="/profile" element={<Profile/>}/>
     
 
-    </Routes>
-    
-    
-    </BrowserRouter>
-    <Nav/>
+    </Routes>  
 
    
     {/* <div className="min-h-screen flex items-center justify-center bg-gray-100">
